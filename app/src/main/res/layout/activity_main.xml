@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F8"
+    android:backgroundTint="#E4F3E1FF"
+    android:divider="@android:drawable/editbox_background"
+    android:foregroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center|top"
+        android:text="🍖🍇 Lista de Compras 🍗🍎"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#2B056E"
+        android:textColorHighlight="#FF0202"
+        android:textColorHint="#000000"
+        android:textColorLink="#CCC9D3"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="622dp"
+        android:ems="10"
+        android:gravity="bottom|start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF8F8"
+        android:backgroundTint="#673AB7"
+        android:baselineAligned="true"
+        android:freezesText="false"
+        android:gravity="center|center_horizontal"
+        android:layerType="none"
+        android:text="Salvar"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#FAFAFA"
+        android:textColorHighlight="#090808"
+        android:textColorLink="#009688"
+        android:textCursorDrawable="@android:drawable/editbox_background_normal"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>
