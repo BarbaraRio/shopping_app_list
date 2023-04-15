@@ -11,8 +11,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.familyshoppingcart.ui.theme.FamilyShoppingCartTheme
+import android.widget.Button
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,6 +25,10 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android")
                 }
             }
+        }
+        val button = findViewById<Button>(R.id.save_button)
+        button.setOnClickListener {
+            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
         }
     }
 }
